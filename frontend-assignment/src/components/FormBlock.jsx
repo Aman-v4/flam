@@ -83,7 +83,7 @@ export default function FormBlock(props) {
     const commonProps = {
       id: key,
       className:
-        "mt-1 block w-full border border-gray-300 bg-white px-3 py-2 text-sm  focus:shadow-[5px_5px_0px_rgba(0,0,0,1)] transition-all duration-300 ease-in-out  focus:outline-none ",
+        "mt-1 block w-full border border-gray-300 bg-white px-3 py-2 text-sm  hover:shadow-[5px_5px_0px_rgba(0,0,0,1)] focus:shadow-[5px_5px_0px_rgba(0,0,0,1)] transition-all duration-300 ease-in-out  focus:outline-none ",
       placeholder: field.placeholder,
       ...register(key, buildValidation(field)),
     };
@@ -111,7 +111,7 @@ export default function FormBlock(props) {
         return (
           <input
             type="checkbox"
-            className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+            className="h-4 w-4 rounded border-gray-300"
             {...register(key, buildValidation(field))}
           />
         );

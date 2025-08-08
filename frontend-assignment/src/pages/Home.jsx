@@ -67,6 +67,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto max-w-7xl p-4 md:p-8 border-dashed border-l-2 border-r-2 border-black h-screen ">
+      {/* <img src='arrow.png' className=" hidden lg:block absolute bottom-30 overflow-y-hidden left-190 rotate-200 scale-x-[-1] w-50 h-50" /> */}
       <header className="mb-6 flex flex-col items-center justify-between gap-3 md:mb-10 md:flex-row">
         <h1 className="text-2xl mb-10 text-black font-semibold  md:text-4xl tracking-wide">Dynamic Interface Compiler</h1>
         <div className="flex flex-wrap items-center gap-3">
