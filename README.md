@@ -9,6 +9,7 @@ A sophisticated mini-application that allows users to design UI blocks (forms, t
 🔹 Logic Injection: Advanced sandboxed logic execution for custom component behavior
 
 Supported Component Types
+
 📝 Forms: Dynamic form generation with validation, input types, and submission handling
 
 📄 Text Blocks: Rich text sections with customizable styling and content
