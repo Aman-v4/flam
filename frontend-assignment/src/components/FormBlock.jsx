@@ -83,7 +83,7 @@ export default function FormBlock(props) {
     const commonProps = {
       id: key,
       className:
-        "mt-1 block w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200",
+        "mt-1 block w-full border border-gray-300 bg-white px-3 py-2 text-sm  focus:shadow-[5px_5px_0px_rgba(0,0,0,1)] transition-all duration-300 ease-in-out  focus:outline-none ",
       placeholder: field.placeholder,
       ...register(key, buildValidation(field)),
     };
@@ -125,7 +125,7 @@ export default function FormBlock(props) {
   };
 
   return (
-    <div className={className || "bg-white rounded-lg shadow p-6"}>
+    <div className={className || "bg-[#FEFDDD] rounded-lg  p-6"}>
       {(title || description) && (
         <div className="mb-6">
           {title && <h3 className="text-lg font-semibold">{title}</h3>}
@@ -159,7 +159,7 @@ export default function FormBlock(props) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-60"
+            className="inline-flex items-center justify-center  bg-[#FE8EC8] px-5 py-3 text-sm font-medium hover:scale-95 active:scale-90 transition-all duration-300 ease-in-out hover:shadow-[5px_5px_0px_rgba(0,0,0,1)] text-black shadow  focus:outline-none  disabled:opacity-60"
           >
             {isSubmitting ? "Submitting..." : submitText}
           </button>
@@ -170,7 +170,7 @@ export default function FormBlock(props) {
               setSubmitMessage("");
               setSubmitIsError(false);
             }}
-            className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-800 shadow hover:bg-gray-50 focus:outline-none"
+            className="inline-flex items-center justify-center  bg-[#628AFB] px-3.5 py-1.5 hover:scale-95 active:scale-90 transition-all duration-300 ease-in-out hover:shadow-[5px_5px_0px_rgba(0,0,0,1)] text-sm font-medium text-gray-800 shadow focus:outline-none"
           >
             Reset
           </button>

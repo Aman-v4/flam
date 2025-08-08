@@ -68,28 +68,28 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-6xl p-4 md:p-8">
       <header className="mb-6 flex flex-col items-center justify-between gap-3 md:mb-10 md:flex-row">
-        <h1 className="text-2xl mb-10 text-white font-bold md:text-4xl tracking-wide">Dynamic Interface Compiler</h1>
+        <h1 className="text-2xl mb-10 text-black font-semibold  md:text-4xl tracking-wide">Dynamic Interface Compiler</h1>
         <div className="flex flex-wrap items-center gap-3">
           <button
-            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-white px-3 py-1.5 text-sm font-medium text-gray-800"
+            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-[#58EA8E] px-5 py-3 text-sm font-semibold tracking-wider text-gray-800"
             onClick={() => loadSample("form")}
           >
             Sample Form
           </button>
           <button
-            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-white px-3 py-1.5 text-sm font-medium text-gray-800"
+            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-[#58EA8E] px-3 py-1.5 text-sm font-semibold tracking-wider text-gray-800"
             onClick={() => loadSample("text")}
           >
             Sample Text
           </button>
           <button
-            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-white px-3 py-1.5 text-sm font-medium text-gray-800"
+            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-[#58EA8E] px-4 py-2 text-sm font-semibold tracking-wider text-gray-800"
             onClick={() => loadSample("image")}
           >
             Sample Image
           </button>
           <button
-            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-white px-3 py-1.5 text-sm font-medium text-gray-800"
+            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-[#58EA8E] px-2 py-2 text-sm font-semibold tracking-wider text-gray-800"
             onClick={() => loadSample("page")}
           >
             Sample Page
@@ -99,13 +99,13 @@ export default function Home() {
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <section>
-          <h2 className="mb-2 text-lg font-semibold">Define UI Blocks (JSON)</h2>
+          <h2 className="mb-2 text-lg font-semibold text-black tracking-wide ">Define UI Blocks (JSON)</h2>
           <JsonEditor value={liveSchema} onChange={handleJsonChange} />
         </section>
 
         <section>
-          <h2 className="mb-2 text-lg font-semibold">Live Preview</h2>
-          <div className="rounded-lg border bg-gray-50 p-4">
+          <h2 className="mb-2 text-lg font-semibold text-black tracking-wide">Live Preview</h2>
+          <div className=" shadow-[10px_10px_0px_rgba(0,0,0,1)]  bg-[#FEFDDD] p-4">
             <BlockRenderer schema={liveSchema} />
           </div>
         </section>
