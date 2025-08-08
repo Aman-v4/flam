@@ -1,7 +1,5 @@
 A sophisticated mini-application that allows users to design UI blocks (forms, tables, text sections) dynamically and compile those definitions into actual working React components without page refreshes. Built as part of a Frontend R&D internship assignment.
 
-![Dynamic Interface Compiler Demo](https://img.shields.io/ds.ctionality**
-
 🔹 UI Block Definition Panel: Interactive JSON editor and form-based schema builder for defining components
 
 🔹 Live Renderer: Real-time parsing of JSON schemas into functional React components
