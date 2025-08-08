@@ -68,28 +68,28 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-6xl p-4 md:p-8">
       <header className="mb-6 flex flex-col items-center justify-between gap-3 md:mb-10 md:flex-row">
-        <h1 className="text-2xl font-bold md:text-3xl">Dynamic Interface Compiler</h1>
-        <div className="flex flex-wrap items-center gap-2">
+        <h1 className="text-2xl mb-10 text-white font-bold md:text-4xl tracking-wide">Dynamic Interface Compiler</h1>
+        <div className="flex flex-wrap items-center gap-3">
           <button
-            className="rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-800 shadow hover:bg-gray-50"
+            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-white px-3 py-1.5 text-sm font-medium text-gray-800"
             onClick={() => loadSample("form")}
           >
             Sample Form
           </button>
           <button
-            className="rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-800 shadow hover:bg-gray-50"
+            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-white px-3 py-1.5 text-sm font-medium text-gray-800"
             onClick={() => loadSample("text")}
           >
             Sample Text
           </button>
           <button
-            className="rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-800 shadow hover:bg-gray-50"
+            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-white px-3 py-1.5 text-sm font-medium text-gray-800"
             onClick={() => loadSample("image")}
           >
             Sample Image
           </button>
           <button
-            className="rounded-md border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-800 shadow hover:bg-gray-50"
+            className="shadow-[5px_5px_0px_rgba(0,0,0,1)]  hover:scale-95 transition-all duration-300 ease-in-out active:scale-90 cursor-pointer  bg-white px-3 py-1.5 text-sm font-medium text-gray-800"
             onClick={() => loadSample("page")}
           >
             Sample Page
