@@ -8,7 +8,7 @@ A sophisticated mini-application that allows users to design UI blocks (forms, t
 
 🔹 Logic Injection: Advanced sandboxed logic execution for custom component behavior
 
-Supported Component Types
+Supported Component Types:
 
 📝 Forms: Dynamic form generation with validation, input types, and submission handling
 
@@ -16,7 +16,8 @@ Supported Component Types
 
 🖼️ Image Components: Dynamic image rendering with configurable properties
 
-Advanced Features
+Advanced Features:
+
 ⚡ Real-time Preview: Instant component rendering without page refreshes
 
 🔒 Sandboxed Logic: Safe execution of user-defined JavaScript logic using Function() constructor
@@ -28,24 +29,25 @@ Advanced Features
 🎯 State Management: Sophisticated state orchestration across dynamic layouts
 
 🛠️ Tech Stack
-Frontend Framework
+
+Frontend Framework:
 React 18+ - Component-based UI library
 
 JavaScript - Type-safe development experience
 
-Styling & UI
+Styling & UI:
 TailwindCSS - Utility-first CSS framework
 
 Responsive Design - Mobile-first approach for all screen sizes
 
-Core Libraries
+Core Libraries:
 React Hook Form - Performant form handling with validation
 
 Monaco Editor (Optional) - VS Code-like JSON editor experience
 
 Zustand (Optional) - Lightweight state management
 
-Development Tools
+Development Tools:
 ESLint - Code linting and formatting
 
 Prettier - Code formatting
