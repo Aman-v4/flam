@@ -125,7 +125,7 @@ export default function FormBlock(props) {
   };
 
   return (
-    <div className={className || "bg-[#FEFDDD] rounded-lg  p-6"}>
+    <div className={className || "bg-[#FEFDDD]  p-8"}>
       {(title || description) && (
         <div className="mb-6">
           {title && <h3 className="text-lg font-semibold">{title}</h3>}
@@ -159,7 +159,7 @@ export default function FormBlock(props) {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="inline-flex items-center justify-center  bg-[#FE8EC8] px-5 py-3 text-sm font-medium hover:scale-95 active:scale-90 transition-all duration-300 ease-in-out hover:shadow-[5px_5px_0px_rgba(0,0,0,1)] text-black shadow  focus:outline-none  disabled:opacity-60"
+            className="inline-flex items-center justify-center  bg-[#FE8EC8] cursor-pointer px-5 py-3 text-sm font-medium hover:scale-95 active:scale-90 transition-all duration-300 ease-in-out shadow-[5px_5px_0px_rgba(0,0,0,1)]  text-black focus:outline-none  disabled:opacity-60"
           >
             {isSubmitting ? "Submitting..." : submitText}
           </button>
@@ -170,7 +170,7 @@ export default function FormBlock(props) {
               setSubmitMessage("");
               setSubmitIsError(false);
             }}
-            className="inline-flex items-center justify-center  bg-[#628AFB] px-3.5 py-1.5 hover:scale-95 active:scale-90 transition-all duration-300 ease-in-out hover:shadow-[5px_5px_0px_rgba(0,0,0,1)] text-sm font-medium text-gray-800 shadow focus:outline-none"
+            className="inline-flex items-center justify-center  bg-[#628AFB] cursor-pointer px-3.5 py-1.5 hover:scale-95 active:scale-90 transition-all duration-300 ease-in-out shadow-[5px_5px_0px_rgba(0,0,0,1)]  text-sm font-medium text-gray-800  focus:outline-none"
           >
             Reset
           </button>

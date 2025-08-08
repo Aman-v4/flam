@@ -3,9 +3,9 @@ import Editor from "@monaco-editor/react";
 
 export default function JsonEditor({ value, onChange }) {
   return (
-    <div className="overflow-hidden rounded-lg border">
+    <div className="overflow-hidden ">
       <Editor
-        height="360px"
+        height="420px"
         defaultLanguage="json"
         theme="vs-dark"
         value={value}

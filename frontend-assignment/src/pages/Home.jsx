@@ -20,7 +20,7 @@ const samples = {
 }`,
   text: `{
   "type": "text",
-  "text": "Hello world! This is a text block rendered from JSON."
+  "text": "Hello flam fam, ik you guys are awesome...Hire me :)"
 }`,
   image: `{
   "type": "image",
@@ -28,7 +28,7 @@ const samples = {
   "alt": "Random image"
 }`,
   page: `[
-  { "type": "text", "text": "Welcome!" },
+  { "type": "text", "text": "Welcome! Loading image can take few seconds....." },
   { "type": "image", "src": "https://picsum.photos/800/200", "alt": "Banner" },
   {
     "type": "form",
@@ -66,7 +66,7 @@ export default function Home() {
   };
 
   return (
-    <div className="mx-auto max-w-6xl p-4 md:p-8">
+    <div className="mx-auto max-w-7xl p-4 md:p-8 border-dashed border-l-2 border-r-2 border-black h-screen ">
       <header className="mb-6 flex flex-col items-center justify-between gap-3 md:mb-10 md:flex-row">
         <h1 className="text-2xl mb-10 text-black font-semibold  md:text-4xl tracking-wide">Dynamic Interface Compiler</h1>
         <div className="flex flex-wrap items-center gap-3">
@@ -97,15 +97,17 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-14 md:grid-cols-2">
         <section>
           <h2 className="mb-2 text-lg font-semibold text-black tracking-wide ">Define UI Blocks (JSON)</h2>
+          <div className="  bg-[#FEFDDD] shadow-[-10px_10px_0px_rgba(0,0,0,1)] p-4">
           <JsonEditor value={liveSchema} onChange={handleJsonChange} />
+          </div>
         </section>
 
         <section>
           <h2 className="mb-2 text-lg font-semibold text-black tracking-wide">Live Preview</h2>
-          <div className=" shadow-[10px_10px_0px_rgba(0,0,0,1)]  bg-[#FEFDDD] p-4">
+          <div className=" shadow-[10px_10px_0px_rgba(0,0,0,1)] bg-[#FEFDDD] px-4 py-1.5">
             <BlockRenderer schema={liveSchema} />
           </div>
         </section>
